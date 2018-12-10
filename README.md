@@ -4,6 +4,25 @@
 "it's the future" -mr.robot
 ```
 
+```
+enter: iex
+exit : control c control c
+run : elixir hello_world.exs
+
+in iex:
+- h --> help, list of commands
+    ex: h String.downcase
+```
+
+### WHY ELIXIR
+* syntax based loosely on ruby, and cherry picked from other languages 
+* industrial strength 
+* future = everything is networked 
+* can handle concurrency
+* is fault tolerant
+* developer friendly, nice tools, has decent error messages
+* highly scalable, highly concurrent, extremely robust in fault tolerant systems,  
+
 As a programming paradigm, concurrent computing is a form of modular programming, namely factoring an overall computation into subcomputations that may be executed concurrently.
 
 ###### What do i need to learn:
@@ -21,7 +40,11 @@ As a programming paradigm, concurrent computing is a form of modular programming
 
 - Two types of files
     * .ex → compiled down to byte code and run on the erlang beam
-    * .exs → scripting files, interpreted
+    * .exs → scripting files, interpreted like ruby and python
+- use snake case to name files
+    * hello_world.exs
+- comment with #
+- functions are grouped in modules
 - String interpolation
     * iex> name = "sean"
     * iex> "Hello #{name}"
@@ -49,17 +72,17 @@ As a programming paradigm, concurrent computing is a form of modular programming
 * IO module
     * :ok is an atom
 
-* To find details about a module or function
-    *String.downcase == man*
-    *String. {tab}*
-* Shows all possibility you can put with string module
-    *c "./hello_world.exs"*
-    *C = compile*
+* To find details about what functions a module has
+    * String.downcase == man
+    * String. {tab}
+        * Shows all possibility you can put with string module
+    * C = compile
+        * c "./hello_world.exs"
 * Compile a file in iex
 * To configure iex
-* h IEx.configure
+    * h IEx.configure
 * Atom
-* A constant
+    * A constant
 
 #### BASIC TYPES
 * Integers → unlimited size, can use _ separator (1_000_000 == 1000000)
